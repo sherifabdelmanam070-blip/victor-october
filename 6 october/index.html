@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ملحمة حرب أكتوبر المجيدة 1973</title>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        :root {
+            --primary-color: #8b0000;
+            --gold-color: #d4af37;
+            --bg-color: #0f0f11;
+            --card-bg: #1a1a1e;
+            --text-color: #e0e0e0;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: 'Cairo', sans-serif;
+        }
+
+        body {
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            line-height: 1.8;
+        }
+
+        header {
+            background: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.8)), var(--primary-color);
+            color: var(--gold-color);
+            text-align: center;
+            padding: 60px 20px;
+            border-bottom: 3px solid var(--gold-color);
+        }
+
+        header h1 {
+            font-size: 3rem;
+            font-weight: 900;
+            margin-bottom: 10px;
+        }
+
+        .container {
+            max-width: 1100px;
+            margin: 40px auto;
+            padding: 0 20px;
+        }
+
+        .section-title {
+            text-align: center;
+            font-size: 2.2rem;
+            color: var(--gold-color);
+            margin-bottom: 30px;
+            position: relative;
+        }
+
+        .section-title::after {
+            content: '';
+            display: block;
+            width: 70px;
+            height: 3px;
+            background: var(--primary-color);
+            margin: 10px auto 0;
+        }
+
+        /* قسم الفيديوهات المحلية */
+        .video-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 25px;
+            margin-bottom: 60px;
+        }
+
+        .video-card {
+            background: var(--card-bg);
+            border-radius: 12px;
+            overflow: hidden;
+            border: 1px solid rgba(212, 175, 55, 0.2);
+            box-shadow: 0 5px 15px rgba(0,0,0,0.5);
+        }
+
+        .video-card video {
+            width: 100%;
+            height: 220px;
+            object-fit: cover;
+            background: #000;
+        }
+
+        .video-info {
+            padding: 15px;
+        }
+
+        .video-info h3 {
+            color: var(--gold-color);
+            font-size: 1.2rem;
+            margin-bottom: 8px;
+        }
+
+        /* معرض الصور */
+        .gallery-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 20px;
+            margin-bottom: 60px;
+        }
+
+        .gallery-item {
+            position: relative;
+            border-radius: 10px;
+            overflow: hidden;
+            height: 240px;
+            cursor: pointer;
+            border: 1px solid rgba(212, 175, 55, 0.3);
+        }
+
+        .gallery-item img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.4s ease;
+        }
+
+        .gallery-item:hover img {
+            transform: scale(1.08);
+        }
+
+        .gallery-caption {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background: linear-gradient(transparent, rgba(0,0,0,0.9));
+            padding: 15px;
+            color: #fff;
+        }
+
+        footer {
+            text-align: center;
+            background: #050505;
+            padding: 20px;
+            color: #888;
+            border-top: 1px solid rgba(212, 175, 55, 0.2);
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1><i class="fa-solid fa-shield-halved"></i> ملحمة حرب أكتوبر 1973</h1>
+        <p>ذكرى العبور العظيم واسترداد الكرامة والأرض</p>
+    </header>
+
+    <div class="container">
+
+        <!-- قسم الفيديوهات بدون روابط خارجية (مستضافة محلياً) -->
+        <section>
+            <h2 class="section-title">فيديوهات توثيقية محليّة</h2>
+            <div class="video-grid">
+
+                <!-- فيديو 1 -->
+                <div class="video-card">
+                    <video controls poster="video1_poster.jpg">
+                        <source src="./img&video/مشهد حقيقي عبور الجيش المصري والقوات العربية وتحطيم خط بارليف الاسرائيلي ، هل يعيد ال.mp4" type="video/mp4">
+                        متصفحك لا يدعم تشغيل الفيديو.
+                    </video>
+                    <div class="video-info">
+                        <h3>لحظة عبور القوات المسلحة</h3>
+                        <p>مشاهد توثيقية لاقتحام مانع قناة السويس المائي في 6 أكتوبر.</p>
+                    </div>
+                </div>
+
+                <!-- فيديو 2 -->
+                <div class="video-card">
+                    <video controls poster="video2_poster.jpg">
+                        <source src="./img&video/لحظة بلحظة.. 6 أكتوبر 1973.. قصة حرب(360P).mp4" type="video/mp4">
+                        متصفحك لا يدعم تشغيل الفيديو.
+                    </video>
+                    <div class="video-info">
+                        <h3>تدمير خط بارليف</h3>
+                        <p>استخدام خراطيم المياه لإحداث الثغرات في الساتر الترابي.</p>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- قسم معرض الصور -->
+        <section>
+            <h2 class="section-title">معرض الصور التاريخية</h2>
+            <div class="gallery-grid">
+
+                <div class="gallery-item">
+                    <img src="./img&video/images.jpg" alt="عبور القناة">
+                    <div class="gallery-caption">
+                        <h4>العبور العظيم</h4>
+                        <p>أبطال القوات المسلحة أثناء عبور قناة السويس.</p>
+                    </div>
+                </div>
+
+                <div class="gallery-item">
+                    <img src="./img&video/132182-القوات-المثرية-بعد-عبور-قناة-السويس.webp" alt="رفع العلم">
+                    <div class="gallery-caption">
